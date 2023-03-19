@@ -5,36 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Product filter</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet " href="style.css ">
 </head>
 
 <body>
-
-    <section class="calculator">
+    <section class="container ">
         <form>
-            <input type="text" class="screen">
+            <i class="fa fa-search "></i>
+            <input type="text" name="" id="search-item" placeholder="search product" onkeyup="search()">
         </form>
 
-        <div class="buttons">
-            <button type="button" class=" btn btn-yellow " data-num="*">*</button>
-            <button type="button" class="btn btn-yellow" data-num="/">/</button>
-            <button type="button" class=" btn btn-yellow " data-num="+">+</button>
-            <button type="button" class="btn btn-yellow" data-num="-">-</button>
+        <div class="product-list" id="product-list">
 
-            <button type="button" class=" btn btn-grey " data-num="9">9</button>
-            <button type="button" class="btn btn-grey" data-num="8">8</button>
-            <button type="button" class=" btn btn-grey " data-num="7">7</button>
-            <button type="button" class="btn btn-grey" data-num="6">6</button>
-            <button type="button" class=" btn btn-grey " data-num="5">5</button>
-            <button type="button" class="btn btn-grey" data-num="4">4</button>
-            <button type="button" class=" btn btn-grey " data-num="3">3</button>
-            <button type="button" class="btn btn-grey" data-num="2">2</button>
-            <button type="button" class=" btn btn-grey " data-num="1">1</button>
-            <button type="button" class="btn btn-grey" data-num="0">0</button>
+            <div class="product">
+                <img src="img\pic_1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Flower</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
 
-            <button type="button" class="btn-equal">=</button>
-            <button type="button" class="btn-clear">c</button>
+            <div class="product">
+                <img src="img\Night Theme.jpg" alt="">
+                <div class="p-details">
+                    <h2>Moon</h2>
+                    <h3>$200</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img\pic_2.png" alt="">
+                <div class="p-details">
+                    <h2>Dessert</h2>
+                    <h3>$250</h3>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <img src="img\pic_11.jpeg" alt="">
+                <div class="p-details">
+                    <h2>Marigold</h2>
+                    <h3>$2500</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img\pic_12.jpg" alt="">
+                <div class="p-details">
+                    <h2>Scenery</h2>
+                    <h3>$2520</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="img\pic_13.png" alt="">
+                <div class="p-details">
+                    <h2>Scenery2</h2>
+                    <h3>$252</h3>
+                </div>
+            </div>
+
+
+
 
         </div>
     </section>
@@ -42,7 +79,7 @@
 
 
 
-    <script src="app.js"></script>
+    <scrip src="app.js "></scrip>
 </body>
 
 </html>

@@ -1,26 +1,21 @@
-(function() {
-    let screen = document.querySelector('.screen');
-    let buttons = document.querySelectorAll('.btn');
-    let equal = document.querySelector('.btn-equal');
-    let clear = document.querySelector('.btn-clear');
+const search = () => {
+    const searchbox = document.getElementById("search-item").Value.toUpperCase();
+    const storeitems = document.getElementById("product-list")
+    const product = document.querySelectorAll(".product")
+    const pname = document.getElementbyTagNmae("h2")
 
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function(e) {
-            let value = e.target.dataset.num;
-            screen.value += value;
-        })
-    });
+    for (var i = 0; i < pname.length; i++) {
+        let match = product[i].getElementsByTagName('h2')[0];
+        if (match) {
+            let textvalue = match.textContent || match.innerHTML
 
-    equal.addEventListener('click', function(e) {
-        if (screen.value == '') {
-            screen.value = "";
-        } else {
-            let answer = eval(screen.value);
-            screen.value = answer;
+            if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+                product[i].style.display = "";
+            } else {
+                product[i].style.display = "none";
+            }
         }
-    })
+    }
 
-    clear.addEventListener('click', function(e) {
-        screen.value = "";
-    })
-})();
+
+}
